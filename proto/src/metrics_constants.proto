@@ -3978,6 +3978,6 @@ message MetricsEvent {
     // END OF AOSP CONSTANTS
 
     // GZOSP custom constants
-    PAOSP = 1000;
+    XENONHD = 1000;
   }
 }

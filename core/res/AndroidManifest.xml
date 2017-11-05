@@ -544,7 +544,7 @@
     <!-- LineageOS additions -->
     <protected-broadcast android:name="lineageos.intent.action.LID_STATE_CHANGED" />
 
-    <!-- PornAOSP additions -->
+    <!-- XenonHD additions -->
     <protected-broadcast android:name="android.settings.SHOW_INPUT_METHOD_PICKER" />
 
     <!-- ====================================================================== -->

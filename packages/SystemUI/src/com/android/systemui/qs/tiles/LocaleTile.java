@@ -114,7 +114,7 @@ public class LocaleTile extends QSTileImpl<State> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.PAOSP;
+        return MetricsEvent.XENONHD;
     }
 
     @Override

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.internal.util.paosp;
+package com.android.internal.util.xenonhd;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -37,7 +37,7 @@ import android.view.KeyEvent;
 
 import java.util.List;
 
-public class PaospUtils {
+public class XenonUtils {
 
     public static final String INTENT_SCREENSHOT = "action_take_screenshot";
     public static final String INTENT_REGION_SCREENSHOT = "action_take_region_screenshot";

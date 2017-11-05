@@ -846,8 +846,8 @@ public class StatusBar extends SystemUI implements DemoMode,
         createAndAddWindows();
 
         mSettingsObserver.onChange(false); // set up
-        mPornSettingsObserver.observe();
-        mPornSettingsObserver.update();
+        mXenonSettingsObserver.observe();
+        mXenonSettingsObserver.update();
         mCommandQueue.disable(switches[0], switches[6], false /* animate */);
         setSystemUiVisibility(switches[1], switches[7], switches[8], 0xffffffff,
                 fullscreenStackBounds, dockedStackBounds);
@@ -5359,9 +5359,9 @@ public class StatusBar extends SystemUI implements DemoMode,
         }
     };
 
-    private PornSettingsObserver mPornSettingsObserver = new PornSettingsObserver(mHandler);
-    private class PornSettingsObserver extends ContentObserver {
-        PornSettingsObserver(Handler handler) {
+    private XenonSettingsObserver mXenonSettingsObserver = new XenonSettingsObserver(mHandler);
+    private class XenonSettingsObserver extends ContentObserver {
+        XenonSettingsObserver(Handler handler) {
             super(handler);
         }
 

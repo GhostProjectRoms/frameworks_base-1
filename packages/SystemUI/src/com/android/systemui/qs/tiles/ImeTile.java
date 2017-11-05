@@ -72,7 +72,7 @@ public class ImeTile extends QSTileImpl<BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.PAOSP;
+        return MetricsEvent.XENONHD;
     }
 
     @Override

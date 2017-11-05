@@ -25,7 +25,7 @@ import android.view.MotionEvent;
 import android.view.GestureDetector;
 import android.widget.FrameLayout;
 
-import com.android.internal.util.paosp.PaospUtils;
+import com.android.internal.util.xenonhd.XenonUtils;
 import com.android.systemui.statusbar.policy.DeadZone;
 
 public class NavigationBarFrame extends FrameLayout {
@@ -45,7 +45,7 @@ public class NavigationBarFrame extends FrameLayout {
                 new GestureDetector.SimpleOnGestureListener() {
             @Override
             public boolean onDoubleTap(MotionEvent e) {
-                PaospUtils.switchScreenOff(context);
+                XenonUtils.switchScreenOff(context);
                 return true;
             }
         });
