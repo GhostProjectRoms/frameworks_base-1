@@ -200,14 +200,14 @@ public class Build {
         public static final String RELEASE = getString("ro.build.version.release");
       
         /**
-         * The user-visible XenonHD Maintainer from the settings menu.
+         * The user-visible PornAOSP Maintainer from the settings menu.
          */
-        public static final String XENONHD_MAINTAINER = getString("ro.xenonhd.maintainer");
+        public static final String PAOSP_MAINTAINER = getString("ro.paosp.maintainer");
 
         /**
-         * The user-visible XenonHD Version from the settings menu.
+         * The user-visible PornAOSP Version from the settings menu.
          */
-        public static final String XENONHD_VERSION = getString("ro.xenonhd.version");
+        public static final String PAOSP_VERSION = getString("ro.paosp.version");
 
         /**
          * The base OS build the product is based on.

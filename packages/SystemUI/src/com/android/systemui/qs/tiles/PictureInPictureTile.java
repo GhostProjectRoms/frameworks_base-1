@@ -24,7 +24,7 @@ import android.provider.Settings;
 import android.service.quicksettings.Tile;
 import android.widget.Toast;
 
-import com.android.internal.util.xenonhd.XenonUtils;
+import com.android.internal.util.paosp.PaospUtils;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.systemui.qs.QSHost;
 import com.android.systemui.plugins.qs.QSTile.BooleanState;
@@ -40,7 +40,7 @@ public class PictureInPictureTile extends QSTileImpl<BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.XENONHD;
+        return MetricsEvent.PAOSP;
     }
 
     @Override
@@ -54,13 +54,13 @@ public class PictureInPictureTile extends QSTileImpl<BooleanState> {
     @Override
     public void handleClick() {
         mHost.collapsePanels();
-        ActivityInfo ai = XenonUtils.getRunningActivityInfo(mContext);
+        ActivityInfo ai = PaospUtils.getRunningActivityInfo(mContext);
         if (ai != null && !ai.supportsPictureInPicture()) {
             Toast.makeText(mContext, mContext.getString(
                     R.string.quick_settings_pip_tile_app_na), Toast.LENGTH_LONG).show();
             return;
         }
-        XenonUtils.sendKeycode(171);
+        PaospUtils.sendKeycode(171);
     }
 
     @Override

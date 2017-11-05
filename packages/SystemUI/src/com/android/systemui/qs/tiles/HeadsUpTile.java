@@ -105,7 +105,7 @@ public class HeadsUpTile extends QSTileImpl<BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.XENONHD;
+        return MetricsEvent.PAOSP;
     }
 
     @Override
