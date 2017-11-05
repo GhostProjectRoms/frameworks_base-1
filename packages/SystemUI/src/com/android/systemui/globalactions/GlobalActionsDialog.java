@@ -20,7 +20,7 @@ import com.android.internal.app.AlertController.AlertParams;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.EmergencyAffordanceManager;
-import com.android.internal.util.xenonhd.XenonUtils;
+import com.android.internal.util.paosp.PaospUtils;
 import com.android.internal.telephony.TelephonyIntents;
 import com.android.internal.telephony.TelephonyProperties;
 import com.android.internal.widget.LockPatternUtils;
@@ -552,7 +552,7 @@ class GlobalActionsDialog implements DialogInterface.OnDismissListener, DialogIn
             try {
                  Thread.sleep(1000); //1s
             } catch (InterruptedException ie) {}
-            XenonUtils.takeScreenshot(true);
+            PaospUtils.takeScreenshot(true);
         }
 
 
@@ -563,7 +563,7 @@ class GlobalActionsDialog implements DialogInterface.OnDismissListener, DialogIn
             try {
                  Thread.sleep(1000); //1s
             } catch (InterruptedException ie) {}
-            XenonUtils.takeScreenshot(false);
+            PaospUtils.takeScreenshot(false);
             return true;
         }
 
